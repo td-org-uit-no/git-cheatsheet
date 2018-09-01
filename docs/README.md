@@ -18,17 +18,17 @@ This is a small cheatsheet containing the basics needed on a day-to-day basis wi
 ### Basic knowledge
   * cd
 ```shell
-cd 				//Moves you to the home directory
-cd .. 				//Moves you to the one directory out (Parent directory)
-cd <DIRECTORY NAME>		//Moves you into directory
+cd 				// Moves you to the home directory
+cd .. 				// Moves you to the one directory out (Parent directory)
+cd <DIRECTORY NAME>		// Moves you into directory
 ```
   * ls
 ```shell
-ls				//Lists the directory contents
+ls				// Lists the directory contents
 ```
   * mkdir
 ```shell
-mkdir <DIRECTORY NAME> 		//Creates a directory (folder) at current location
+mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 ```
 
 <hr> 
@@ -73,18 +73,21 @@ git push -f 			// Force pushes the commits. Allows for altering history (CARE)
 <hr>
 
 ## More advanced usage
-* Branch
+* Branches
 ```shell
+git branch 			// Displaying local branches
+```
+* Other
+```shell
+git rebase
 git reset
 git stash
 git fetch
 git checkout
-git branch
-git rebase
 ```
 <hr>
 
-## Hackers favourites
+## Personal favourites
 ```shell
 git commit -a --amend --no-edit
 git push -f
@@ -97,7 +100,3 @@ git log PRETTYLOG?
 * [Github For The Rest Of Us (Video)](https://www.youtube.com/watch?v=8_mHSdCkv3s)
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
-
-<hr>
-### Thanks to..
-* [Max Johansen](https://github.com/MaxJohansen)
