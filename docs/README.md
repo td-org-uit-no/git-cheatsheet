@@ -1,8 +1,11 @@
 
 <style>
 	code    {
-		max-width: 600px;
+		max-width: 800px;
 		color: #b5e853;
+			}
+	body	{
+		background-color: #000
 			}
 </style>
 
@@ -12,8 +15,7 @@
 ## Introduction
 This is a small cheatsheet containing the basics needed on a day-to-day basis with git. 
 
-### Basic useful terminal commandos
-
+### Basic knowledge
   * cd
 ```shell
 cd 				//Moves you to the home directory
@@ -36,12 +38,17 @@ mkdir <DIRECTORY NAME> 		//Creates a directory (folder) at current location
 ```shell
 git init
 ```
-* Cloning an existing repository
+* Cloning an existing repository <br>
 Most common is to clone a remote repository (From the interwebz)
 ```shell
 git clone <REPOSITORY>
 ```
-* Displaying git status
+* Pulling all new changes from the remote
+```shell
+git pull
+```
+
+* Displaying git status <br>
 This will display all changed files, which head, as well as other information about your current git status
 ```shell
 git status
@@ -49,8 +56,8 @@ git status
 
 * Staging files
 ```shell
-git add [FILE PATH]
-git add . 			// Adds all changed files and untracked files subfolder from current folder
+git add [PATH]			// Stages a single file or directory
+git add . 			// Adds all changed files and untracked in all sub-directories
 git add -a 			// Adds all tracked files that are changed 
 ```
 * Committing files
@@ -58,30 +65,31 @@ git add -a 			// Adds all tracked files that are changed
 git commit
 git commit -m "MESSAGE" 	//Quick committing with short message
 ```
-* Displaying git status
+* Pushing all committed changes to the remote
 ```shell
-git status
+git push
+git push -f 			// Force pushes the commits. Allows for altering history (CARE)
 ```
-* Displaying git status
+<hr>
+
+## More advanced usage
+* Branch
 ```shell
-git status
-```
-* Other
-```shell
-git commit --amend --no-edit
 git reset
 git stash
-git log PRETTYLOG?
-git clone
-git pull
 git fetch
 git checkout
 git branch
-git status
-git push
 git rebase
 ```
+<hr>
 
+## Hackers favourites
+```shell
+git commit -a --amend --no-edit
+git push -f
+git log PRETTYLOG?
+```
 <hr>
 
 ## Other great resources
