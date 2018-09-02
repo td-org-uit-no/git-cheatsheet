@@ -1,7 +1,7 @@
 
 <style>
 	code    {
-		max-width: 800px;
+		width: auto;
 		color: #b5e853;
 			}
 	body	{
@@ -9,11 +9,9 @@
 			}
 </style>
 
-# git cheatsheet
-<hr>
-
 ## Introduction
-This is a small cheatsheet containing the basics needed on a day-to-day basis with git. 
+This is a small cheatsheet containing the basics needed on a day-to-day basis with git.
+
 
 ### Basic knowledge
   * cd
@@ -84,15 +82,25 @@ git reset
 git stash
 git fetch
 git checkout
+git help everyday
 ```
 <hr>
 
 ## Personal favourites
 ```shell
-git commit -a --amend --no-edit
-git push -f
-git log PRETTYLOG?
+git commit -a --amend --no-edit 	//Adds and amends changes to the last commit
+git checkout -b <branch> // Shortcut for creating and checking out a new branch
 ```
+### Pretty git log?
+```shell
+git lg 				//git lg is a custom alias you can create for log
+```
+* To create the alias, copy paste this into your terminal:
+
+```shell
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+```
+Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html)
 <hr>
 
 ## Other great resources
