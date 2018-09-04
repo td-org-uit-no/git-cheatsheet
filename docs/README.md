@@ -31,6 +31,9 @@ mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 
 <hr> 
 
+#hello 
+whats up
+
 ## Basic usage
 * Initializing a git repository
 ```shell
