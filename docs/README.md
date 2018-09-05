@@ -10,7 +10,8 @@
 </style>
 
 ## Introduction
-This is a small cheatsheet containing the basics needed on a day-to-day basis with git.
+This is a small cheatsheet containing the basics needed on a day-to-day basis with git.<br>
+Please keep in mind that this is a work in progress!
 
 
 ### Basic knowledge
@@ -98,8 +99,9 @@ git checkout
 
 ## Personal favourites
 ```sh
-git commit -a --amend --no-edit 	//Adds and amends changes to the last commit
+git commit -a --amend --no-edit 	// Adds and amends changes to the last commit
 git checkout -b <branch> 		// Shortcut for creating and checking out a new branch
+git blame <FILENAME>			// Shows file with log of who committed which line
 ```
 ### Pretty git log?
 Do you want that pretty pretty log instead of the bulky old one?<br>
@@ -136,3 +138,6 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [Github For The Rest Of Us (Video)](https://www.youtube.com/watch?v=8_mHSdCkv3s)
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
+
+## Anything missing? 
+Feel free to create a pull request to the repository [HERE](https://github.com/jonjohansen/git-cheatsheet/pulls)
