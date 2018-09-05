@@ -80,6 +80,7 @@ git branch 			// Displaying local branches
 ```
 * Other
 ```shell
+git clean -ffxdn
 git rebase
 git reset
 git stash
@@ -95,19 +96,36 @@ git commit -a --amend --no-edit 	//Adds and amends changes to the last commit
 git checkout -b <branch> // Shortcut for creating and checking out a new branch
 ```
 ### Pretty git log?
+Do you want that pretty pretty log?
+It looks like this
 ```shell
-git lg 				//git lg is a custom alias you can create for log
+* 7b84c86 - (HEAD -> master) Her er en commit (16 hours ago) <Jon Johansen>
+* 9c21d09 - (origin/master, origin/HEAD) Add git lg alias command. Its so pretty (3 days ago) <Jon Johansen>
+* 67f87f8 - Fix comment spacing (4 days ago) <Jon Johansen>
+* c2e4573 - Add a few more descriptions (4 days ago) <Jon Johansen>
+* 0575e8f - Testing theme (4 days ago) <Jon Johansen>
+*   9770331 - Init github pages (7 days ago) <Jon Johansen>
+|\
+| * 01442b9 - Set theme jekyll-theme-hacker (7 days ago) <Jon Johansen>
+* | e697e75 - Init gitignore and github pages (7 days ago) <Jon Johansen>
+|/
+* 6523eae - Init / Add readme (7 days ago) <Jon Johansen>
 ```
 * To create the alias, copy paste this into your terminal:
 
 ```shell
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 ```
+
+```shell
+git lg 				//git lg is a custom alias you can create for log
+```
+
 Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html)
 <hr>
 
 ## Other great resources
-
+* Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * [Github For The Rest Of Us (Video)](https://www.youtube.com/watch?v=8_mHSdCkv3s)
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
