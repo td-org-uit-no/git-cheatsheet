@@ -15,99 +15,123 @@ This is a small cheatsheet containing the basics needed on a day-to-day basis wi
 
 ### Basic knowledge
   * cd
-```shell
+```sh
 cd 				// Moves you to the home directory
 cd .. 				// Moves you to the one directory out (Parent directory)
 cd <DIRECTORY NAME>		// Moves you into directory
 ```
   * ls
-```shell
+```sh
 ls				// Lists the directory contents
 ```
   * mkdir
-```shell
+```sh
 mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 ```
 
 <hr> 
 
-#hello 
-whats up
-
 ## Basic usage
 * Initializing a git repository
-```shell
+```sh
 git init
 ```
 * Cloning an existing repository <br>
 Most common is to clone a remote repository (From the interwebz)
-```shell
+```sh
 git clone <REPOSITORY>
 ```
 * Pulling all new changes from the remote
-```shell
+```sh
 git pull
 ```
 
 * Displaying git status <br>
 This will display all changed files, which head, as well as other information about your current git status
-```shell
+```sh
 git status
 ```
 
 * Staging files
-```shell
+```sh
 git add [PATH]			// Stages a single file or directory
 git add . 			// Adds all changed files and untracked in all sub-directories
 git add -a 			// Adds all tracked files that are changed 
 ```
 * Committing files
-```shell
+```sh
 git commit
 git commit -m "MESSAGE" 	//Quick committing with short message
 ```
 * Pushing all committed changes to the remote
-```shell
+```sh
 git push
 git push -f 			// Force pushes the commits. Allows for altering history (CARE)
+```
+
+* Help
+```sh
+man git 			// Shows the manual entries  of git 
+git <ANY COMMAND> -h 	// Shows the help entry for any given command
+git help everyday 		//Shows a short list of everyday git commands
 ```
 <hr>
 
 ## More advanced usage
 * Branches
-```shell
+```sh
 git branch 			// Displaying local branches
+git branch <BRANCH NAME> 		// Creates a new local branch
+git checkout <BRANCH NAME> 		// Checks out a branch
 ```
+
 * Other
-```shell
+```sh
+git clean
 git rebase
 git reset
 git stash
 git fetch
 git checkout
-git help everyday
 ```
 <hr>
 
 ## Personal favourites
-```shell
+```sh
 git commit -a --amend --no-edit 	//Adds and amends changes to the last commit
-git checkout -b <branch> // Shortcut for creating and checking out a new branch
+git checkout -b <branch> 		// Shortcut for creating and checking out a new branch
 ```
 ### Pretty git log?
-```shell
-git lg 				//git lg is a custom alias you can create for log
+Do you want that pretty pretty log?
+It looks like this (With slightly more color)
+```sh
+* 7b84c86 - (HEAD -> master) Her er en commit (16 hours ago) <Jon Johansen>
+* 9c21d09 - (origin/master, origin/HEAD) Add git lg alias command. (3 days ago) <Jon Johansen>
+* 67f87f8 - Fix comment spacing (4 days ago) <Jon Johansen>
+* c2e4573 - Add a few more descriptions (4 days ago) <Jon Johansen>
+* 0575e8f - Testing theme (4 days ago) <Jon Johansen>
+*   9770331 - Init github pages (7 days ago) <Jon Johansen>
+|\
+| * 01442b9 - Set theme jekyll-theme-hacker (7 days ago) <Jon Johansen>
+* | e697e75 - Init gitignore and github pages (7 days ago) <Jon Johansen>
+|/
+* 6523eae - Init / Add readme (7 days ago) <Jon Johansen>
 ```
 * To create the alias, copy paste this into your terminal:
 
-```shell
+```sh
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 ```
+
+```sh
+git lg 				//git lg is a custom alias you can create for log
+```
+
 Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html)
 <hr>
 
 ## Other great resources
-
+* Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * [Github For The Rest Of Us (Video)](https://www.youtube.com/watch?v=8_mHSdCkv3s)
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
