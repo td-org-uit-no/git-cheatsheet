@@ -138,6 +138,7 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [Github For The Rest Of Us (Video)](https://www.youtube.com/watch?v=8_mHSdCkv3s)
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
+* [Oh, shit, git!](http://ohshitgit.com/)
 
 ## Anything missing? 
 Feel free to create a pull request to the repository [HERE](https://github.com/jonjohansen/git-cheatsheet/pulls)
