@@ -9,12 +9,8 @@
 			}
 </style>
 
-## Introduction
-This is a small cheatsheet containing the basics needed on a day-to-day basis with git.<br>
-Please keep in mind that this is a work in progress!
-
-
-### Basic knowledge
+## Basic knowledge
+* To move around with the use of the terminal a few commands are neccessary
   * cd
 ```sh
 cd 				// Moves you to the home directory
@@ -69,7 +65,12 @@ git commit -m "MESSAGE" 	//Quick committing with short message
 git push
 git push -f 			// Force pushes the commits. Allows for altering history (CARE)
 ```
-
+```sh
+git reset 			// Unstages all files
+git reset --hard		// Resets all files back to HEAD
+git reset HEAD~<NUMBER> --hard	// Resets ALL files and commits back <NUMBER> commits
+git reset HEAD~<NUMBER> 	// Moves head back <NUMBER> commits, but maintains files changed
+```
 * Help
 ```sh
 man git 			// Shows the manual entries  of git 
@@ -81,17 +82,30 @@ git help everyday 		//Shows a short list of everyday git commands
 ## More advanced usage
 * Branches
 ```sh
-git branch 			// Displaying local branches
+git branch 			// Lists local branches
+git branch -a 			// Lists local branches & remote tracked branches
+git branch -d 			// Deletes a fully merged branch
+git branch -D <BRANCH NAME>		// Deletes branch even if it is not merged
 git branch <BRANCH NAME> 	// Creates a new local branch
-git checkout <BRANCH NAME> 	// Checks out a branch
+git checkout <BRANCH NAME> 	// Checks out a branch (Switches to branch)
 ```
 
+* Stashing
+ * Stashing is used to save changes that you would like to keep "in memory" but not commit. You can stash changes made, and reapply them at any later time. Very useful if you've made some messy changes, and you would like to switch branches, or work on something else.
+
+```sh
+git stash 		// Stashes all changed files
+git stash list 		// Lists all the stashes
+git stash show  	// Shows changes within stashes (*)
+git stash apply		// Applies the stashed changes (*)
+```
+ * **\*** Stashes are saved separate, and can be shown/listed/applied separate by appending a ```stash@{NUMBER}``` onto those commands
+
+<hr>
 * Unfinished descriptions of other commands
 ```sh
 git clean
 git rebase
-git reset
-git stash
 git fetch
 git checkout
 ```
