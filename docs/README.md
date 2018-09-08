@@ -149,6 +149,7 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [Learn Git Branching](https://learngitbranching.js.org/)
 * [Oh, shit, git!](http://ohshitgit.com/)
 * [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+* [gitignore.io](https://www.gitignore.io/)
 
 ## Anything missing? 
 Feel free to create a [pull request](https://github.com/jonjohansen/git-cheatsheet/pulls).
