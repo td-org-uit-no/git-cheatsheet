@@ -39,22 +39,21 @@ git clone <REPOSITORY>
 git pull
 ```
 
-* Displaying git status <br>
-This will display all changed files, which head, as well as other information about your current git status
+* Displaying git status
 ```sh
-git status
+git status			// Gives you all the information about current git status
 ```
 
 * Staging files
 ```sh
-git add [PATH]			// Stages a single file or directory
+git add <PATH>			// Stages a single file or directory
 git add . 			// Adds all changed files and untracked in all sub-directories
 git add -a 			// Adds all tracked files that are changed 
 ```
 * Committing files
 ```sh
 git commit
-git commit -m "MESSAGE" 	//Quick committing with short message
+git commit -m "MESSAGE" 	// Quick committing with short message
 ```
 * Pushing all committed changes to the remote
 ```sh
@@ -71,7 +70,7 @@ git reset HEAD~<NUMBER> 	// Moves head back <NUMBER> commits, but maintains file
 ```sh
 man git 			// Shows the manual entries  of git 
 git <ANY COMMAND> -h 		// Shows the help entry for any given command
-git help everyday 		//Shows a short list of everyday git commands
+git help everyday 		// Shows a short list of everyday git commands
 ```
 <br>
 <hr>
@@ -88,7 +87,7 @@ git checkout <BRANCH NAME> 	// Checks out a branch (Switches to branch)
 ```
 
 * Stashing
- * Stashing is used to save changes that you would like to keep "in memory" but not commit. You can stash changes made, and reapply them at any later time. Very useful if you've made some messy changes, and you would like to switch branches, or work on something else.
+  * Stashing is used to save changes that you would like to keep "in memory" but not commit. You can stash changes made, and reapply them at any later time. Very useful if you've made some messy changes, and you would like to switch branches, or work on something else.
 
 ```sh
 git stash 		// Stashes all changed files
