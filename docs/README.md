@@ -9,7 +9,7 @@
 			}
 </style>
 
-## Basic knowledge
+# Basic knowledge
 * To move around with the use of the terminal a few commands are necessary
 
 ```sh
@@ -21,10 +21,10 @@ ls				// Lists the directory contents
 
 mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 ```
-
+<br>
 <hr> 
 
-## Basic usage
+# Basic usage
 * Initializing a git repository
 ```sh
 git init
@@ -73,15 +73,16 @@ man git 			// Shows the manual entries  of git
 git <ANY COMMAND> -h 		// Shows the help entry for any given command
 git help everyday 		//Shows a short list of everyday git commands
 ```
+<br>
 <hr>
 
-## More advanced usage
+# More advanced usage
 * Branches
 ```sh
 git branch 			// Lists local branches
 git branch -a 			// Lists local branches & remote tracked branches
 git branch -d 			// Deletes a fully merged branch
-git branch -D <BRANCH NAME>		// Deletes branch even if it is not merged
+git branch -D <BRANCH NAME>	// Deletes branch even if it is not merged
 git branch <BRANCH NAME> 	// Creates a new local branch
 git checkout <BRANCH NAME> 	// Checks out a branch (Switches to branch)
 ```
@@ -107,13 +108,13 @@ git fetch
 ```
 <hr>
 
-## Personal favourites
+# Personal favourites
 ```sh
 git commit -a --amend --no-edit 	// Adds and amends changes to the last commit
 git checkout -b <branch> 		// Shortcut for creating and checking out a new branch
 git blame <FILENAME>			// Shows file with log of who committed which line
 ```
-### Pretty git log?
+## Pretty git log?
 Do you want that pretty pretty log instead of the bulky old one?<br>
 It looks like this (With slightly more color)
 ```sh
