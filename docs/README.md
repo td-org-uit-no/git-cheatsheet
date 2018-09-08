@@ -100,7 +100,7 @@ git stash apply		// Applies the stashed changes (*)
 
 <hr>
 
-* Commands coming soon™
+# Commands coming soon™
 ```sh
 git clean
 git merge
@@ -148,9 +148,12 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
 * [Learn Git Branching](https://learngitbranching.js.org/)
 * [Oh, shit, git!](http://ohshitgit.com/)
+* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## Anything missing? 
 Feel free to create a [pull request](https://github.com/jonjohansen/git-cheatsheet/pulls).
 <hr>
 
 Written & managed by [jonjohansen](https://github.com/jonjohansen) for [Tromsøstudentenes Dataforening](https://www.td.org.uit.no/)
+* With contributions from:
+  * [MaxJohansen](https://github.com/MaxJohansen)
