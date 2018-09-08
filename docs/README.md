@@ -1,4 +1,3 @@
-
 <style>
 	code    {
 		width: auto;
@@ -8,6 +7,7 @@
 		background-color: #000
 			}
 </style>
+
 
 # Basic knowledge
 * To move around with the use of the terminal a few commands are necessary
@@ -21,6 +21,7 @@ ls				// Lists the directory contents
 
 mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 ```
+
 <br>
 <hr> 
 
@@ -88,23 +89,25 @@ git checkout <BRANCH NAME> 	// Checks out a branch (Switches to branch)
 
 * Stashing
   * Stashing is used to save changes that you would like to keep "in memory" but not commit. You can stash changes made, and reapply them at any later time. Very useful if you've made some messy changes, and you would like to switch branches, or work on something else.
-
+* 
 ```sh
 git stash 		// Stashes all changed files
 git stash list 		// Lists all the stashes
 git stash show  	// Shows changes within stashes (*)
 git stash apply		// Applies the stashed changes (*)
 ```
- * **\*** Stashes are saved separate, and can be shown/applied separate by appending a ```stash@{NUMBER}``` onto those commands. ```NUMBER``` can be found in with the ```list``` command
+ * **(\*)** Stashes are saved separate, and can be shown/applied separate by appending a ```stash@{NUMBER}``` onto those commands. ```NUMBER``` can be found in with the ```list``` command
 
 <hr>
 
-* Unfinished descriptions of other commands
+* Commands coming soon™
 ```sh
 git clean
+git merge
 git rebase
 git fetch
 ```
+
 <hr>
 
 # Personal favourites
@@ -127,7 +130,7 @@ It looks like this (With slightly more color)
 ```
 * To get the log you have to create an alias. 
   * To create the alias, simply copy paste this into your terminal:
-
+* 
 ```sh
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 ```
@@ -147,4 +150,7 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [Oh, shit, git!](http://ohshitgit.com/)
 
 ## Anything missing? 
-Feel free to create a pull request to the repository [HERE](https://github.com/jonjohansen/git-cheatsheet/pulls)
+Feel free to create a [pull request](https://github.com/jonjohansen/git-cheatsheet/pulls).
+<hr>
+
+Written & managed by [jonjohansen](https://github.com/jonjohansen) for [Tromsøstudentenes Dataforening](https://www.td.org.uit.no/)
