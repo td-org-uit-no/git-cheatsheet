@@ -10,19 +10,15 @@
 </style>
 
 ## Basic knowledge
-* To move around with the use of the terminal a few commands are neccessary
-  * cd
+* To move around with the use of the terminal a few commands are necessary
+
 ```sh
 cd 				// Moves you to the home directory
 cd .. 				// Moves you to the one directory out (Parent directory)
 cd <DIRECTORY NAME>		// Moves you into directory
-```
-  * ls
-```sh
+
 ls				// Lists the directory contents
-```
-  * mkdir
-```sh
+
 mkdir <DIRECTORY NAME> 		// Creates a directory (folder) at current location
 ```
 
@@ -99,15 +95,15 @@ git stash list 		// Lists all the stashes
 git stash show  	// Shows changes within stashes (*)
 git stash apply		// Applies the stashed changes (*)
 ```
- * **\*** Stashes are saved separate, and can be shown/listed/applied separate by appending a ```stash@{NUMBER}``` onto those commands
+ * **\*** Stashes are saved separate, and can be shown/applied separate by appending a ```stash@{NUMBER}``` onto those commands. ```NUMBER``` can be found in with the ```list``` command
 
 <hr>
+
 * Unfinished descriptions of other commands
 ```sh
 git clean
 git rebase
 git fetch
-git checkout
 ```
 <hr>
 
@@ -121,10 +117,6 @@ git blame <FILENAME>			// Shows file with log of who committed which line
 Do you want that pretty pretty log instead of the bulky old one?<br>
 It looks like this (With slightly more color)
 ```sh
-* 7b84c86 - (HEAD -> master) Her er en commit (16 hours ago) <Jon Johansen>
-* 9c21d09 - (origin/master, origin/HEAD) Add git lg alias command. (3 days ago) <Jon Johansen>
-* 67f87f8 - Fix comment spacing (4 days ago) <Jon Johansen>
-* c2e4573 - Add a few more descriptions (4 days ago) <Jon Johansen>
 * 0575e8f - Testing theme (4 days ago) <Jon Johansen>
 *   9770331 - Init github pages (7 days ago) <Jon Johansen>
 |\
