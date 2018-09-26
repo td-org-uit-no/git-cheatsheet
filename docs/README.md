@@ -152,7 +152,7 @@ Source: [Pretty git Log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.h
 * [gitignore.io](https://www.gitignore.io/)
 
 ## Anything missing? 
-Feel free to create a [pull request](https://github.com/jonjohansen/git-cheatsheet/pulls).
+Feel free to create a [pull request](https://github.com/td-org-uit-no/git-cheatsheet/pulls).
 <hr>
 
 Written & managed by [jonjohansen](https://github.com/jonjohansen) for [Tromsøstudentenes Dataforening](https://www.td.org.uit.no/)
